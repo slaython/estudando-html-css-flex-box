@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title> Input somente leitura </title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <label>Somente Leitura:</label>
+                <input type="text" value="valor inalterável" readonly="true">
+            </form>
+        </div>
+    </body>
+    <style>
+        body {
+            background: #708090;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            color: #fff;
+            background: #778899;
+            border: 3px solid #677685;
+            display: flex;
+            padding: 20px;
+        }
+        form {
+            width: 100%;
+            padding: 20px;
+            background: #677685;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-family: Tahoma;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        input {
+            border-radius: 3px;
+            border: 1px solid white;
+            padding: 10px;
+            box-shadow: 0 5px 8px rgba(30, 60, 90, 0.1);
+            font-family: Tahoma;
+            font-size: .85rem;
+            color: #696766;
+        }
+        input {
+            background: #eee;
+            cursor: not-allowed;
+        }
+    </style>
+</html>

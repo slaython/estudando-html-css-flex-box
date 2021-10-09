@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title> Efeito ao passar o mouse </title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <button>Passar o mouse</button>
+            </form>
+        </div>
+    </body>
+    <style>
+        body {
+            background: #708090;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: #778899;
+            border: 3px solid #677685;
+            display: flex;
+            padding: 20px;
+        }
+        form {
+            width: 100%;
+            height: 300px;
+            padding: 20px;
+            background: #677685;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button {
+            display: inline-block;
+            background: none;
+            padding: 10px;
+            color: #fff;
+            font-family: Tahoma;
+            font-size: .75rem;
+            text-transform: uppercase;
+            border: 2px solid white;
+            border-radius: 3px;
+            box-shadow: 0 5px 8px rgba(30, 60, 90, 0.1);
+        }
+        button:hover {
+            background: #778899;
+            cursor: pointer;
+        }
+    </style>
+</html>
