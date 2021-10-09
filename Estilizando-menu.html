@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title> Estilizando-menu </title>
+    </head>
+    <body>
+        <header>
+            <ul id="menu">
+                <li> <a href="">PHP</a> </li>
+                <li> <a href="">C#</a> </li>
+                <li> <a href="">Phyton</a> </li>
+            </ul>
+        </header>
+    </body>
+    <style>
+        body {
+            background: #708090;
+        }
+        header {
+            height: 50px;
+            border-bottom: 1px solid white;
+        }
+        #menu  {
+            display: flex;
+        }
+        li{
+            list-style: none;
+            margin: 15px;
+        }
+        a {
+            padding: 15px;
+            background: tan;
+            text-decoration: none;
+            transition: .3s;
+            color: white;
+        }
+        a:hover {
+            background: orange;
+            letter-spacing: .1em;
+            transition: .3s;
+        }
+    </style>
+</html>

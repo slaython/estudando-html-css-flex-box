@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title> Posicionamento através de pseudo classes </title>
+    </head>
+    <body>
+        <div class="container">
+            <div> texto </div>
+            <div> texto </div>
+            <div> texto </div>
+            <div> texto </div>
+            <div> texto </div>
+        </div>
+    </body>
+    <style>
+        body {
+            background: #708090;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            color: #fff;
+            background: #778899;
+            border: 3px solid #677685;
+            display: flex;
+        }
+        .container div {
+            background: #677685;
+            width: 150px;
+            margin: 10px;
+        }
+        .container div{
+            display: flex;
+            justify-content: center;
+        }
+        .container div:hover {
+            cursor: pointer;
+            background-color: lawngreen;
+            text-transform: uppercase;
+        }
+    </style>
+</html>

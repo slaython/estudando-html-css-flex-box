@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title> Selecione todos, exceto </title>
+    </head>
+    <body>
+        <article>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+
+            <p class="texto-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+        </article>
+
+        <section>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+        </section>
+    </body>
+    <style>
+        body {
+            background: #708090;
+        }
+        article {
+            background: #677685;
+            padding: 20px;
+        }
+         p:not(.texto-normal){
+            font-style: italic;
+        }
+        article p:last-child::after{
+            content:  ' " ';
+            font-size: 2.35rem;
+            display: inline-block;
+            color: tomato;
+        }
+    </style>
+</html>
