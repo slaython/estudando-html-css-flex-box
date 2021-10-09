@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title> Pseudo-classe e pseudo-elemento </title>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+
+<style>
+    body {
+        background: #708090;
+    }
+    .container {
+        max-width: 950px;
+        margin: 0 auto;
+        color: #fff;
+        background: #778899;
+        border: 3px solid #677685;
+        display: flex;
+    }
+    .container div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #677685;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    .container div:nth-child(4) {
+        background: tomato;
+    }
+    .container div:last-child:after {
+        content: ' ';
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        margin-left: 150px;
+        background: white;
+    }
+</style>
+</html>
